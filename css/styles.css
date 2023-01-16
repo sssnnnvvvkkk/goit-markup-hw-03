@@ -31,10 +31,9 @@ img {
 }
 
 .container {
-  max-width: 1158px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .sections {
@@ -54,7 +53,6 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -167,6 +165,15 @@ img {
 
 /* features */
 
+.item {
+  flex-basis: calc((100% - 72px) /4);
+}
+
+.text-content{
+  display: flex;
+  gap: 24px;
+}
+
 .title-features {
 }
 .visually-hidden {
@@ -215,10 +222,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.text-content{
-  display: flex;
-  gap: 24px;
-}
+
 /* team */
 
 .team {
@@ -236,7 +240,6 @@ img {
 .team-item {
   background: var(--light-color);
   text-align: center;
-  padding-bottom: 32px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
@@ -257,7 +260,8 @@ img {
 }
 
 .team-conten {
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-list {
@@ -267,11 +271,6 @@ img {
 
 /* footer */
 
-.footer {
-  background: var(--main-background);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -297,6 +296,13 @@ img {
 
 /* -----PORTFOLIO----- */
 /* header */
+
+.header-portfolio {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+}
+
 .logo-portfolio {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -370,6 +376,7 @@ img {
   cursor: pointer;
   border: var(--border-color);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .btn-portfolio:hover,
@@ -383,10 +390,17 @@ img {
 }
 
 /* section image*/
+
+.itm-portfolio {
+  flex-basis: calc((100% - 48px) /3);
+}
+
 .content-img-p {
   border: 1px solid #E7E9FC;
+  border-top: none;
   padding-left: 16px;
   padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .image-list {
@@ -404,7 +418,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-background);
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 .image-text {
   font-size: 16px;
